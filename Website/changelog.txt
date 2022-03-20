@@ -57,7 +57,7 @@ Version: 2.2.0
 Version: 2.1.0
   - Updated Bootstrap to version 4.5.0
   - Updated the PHP Email Form library to version 2.0 with reCaptcha support
-  - AAded inner-page.html page template
+  - Added inner-page.html page template
   - Added smooth scroll on page load with hash links in the url
   - Added navigation active state on scroll
   - Replaced the WOW animation on scroll library with AOS

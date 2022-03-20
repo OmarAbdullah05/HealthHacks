@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<ul>
+  <li><a class="nav-link" style="padding-bottom: 39%;" href="/">Home</a></li>
+  <li><a class="nav-link" href="/map">Map</a></li>
+  <li><a class="nav-link scrollto active" href="/personal-portal">Medical Portal</a></li>
+  <li><a class="nav-link" href="/signup">Sign Up</a></li>
+  <li><a class="nav-link" href="/login">Log In</a></li>
+</ul>
+{% endblock %}
+
+
+{% block content %}
+
+<!-- This somehow works so leave it like this -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="profile-title ml-1">
+  
+  <h1>{{ name }}'s Profile</h1>
+
+</div>
+
+<div class="row mt-5 mb-5 ml-1">
+
+  <div class="col-md-1"></div>
+
+  <div class="patient-header col-md-4">
+    <div><strong>Name:</strong> {{ name }}</div>
+    <div><strong>Sex:</strong> {{ sex }}</div>
+    <div><strong>Date of Birth:</strong> {{ date_of_birth }}</div>
+    <br><br>
+    <div><strong>Pre-existing Conditions:</strong> blah blah blah blah</div>
+    <br><br>
+    <div><strong>Other Important Information:</strong> blah blah blah blah</div>
+  </div>
+
+  <div class="col-md-3"></div>
+
+  <div class="col-md-2">
+    <img id="picture" src="data:image/jpeg;base64,{{ img_data }}" width="100%">
+  </div>
+
+  <div class="col-md-2"></div>
+</div>
+
+
+
+{% endblock %}
